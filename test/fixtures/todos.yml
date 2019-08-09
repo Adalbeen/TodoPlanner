@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: MyText
+  DateOfCreation: 2019-08-07
+  check: false
+  owner: MyText
+
+two:
+  text: MyText
+  DateOfCreation: 2019-08-07
+  check: false
+  owner: MyText
