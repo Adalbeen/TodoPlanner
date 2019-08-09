@@ -17,16 +17,16 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: jrgfdmjw
-  password: 8qiXAv8GBgWH9sZBPz9OafJ_g_Wi8ex9
-  host: postgres://jrgfdmjw:8qiXAv8GBgWH9sZBPz9OafJ_g_Wi8ex9@rogue.db.elephantsql.com:5432/jrgfdmjw
+  username: lyogxierzzhxuu
+  password: 65a931e3f9620a557d8a618c9dac6987f65ee55362ec504f7d01a1bea57e6fc4
+  host: postgres://lyogxierzzhxuu:65a931e3f9620a557d8a618c9dac6987f65ee55362ec504f7d01a1bea57e6fc4@ec2-54-247-171-30.eu-west-1.compute.amazonaws.com:5432/d3dt4n1q20shcs
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  pool: 20
 
 development:
   <<: *default
-  database: planner_development
+  database: d3dt4n1q20shcs
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -60,7 +60,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: planner_test
+  database: d3dt4n1q20shcs
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -83,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: planner_production
-  username: planner
-  password: <%= ENV['PLANNER_DATABASE_PASSWORD'] %>
+  database: d3dt4n1q20shcs
+  username: lyogxierzzhxuu
+  password: 65a931e3f9620a557d8a618c9dac6987f65ee55362ec504f7d01a1bea57e6fc4
